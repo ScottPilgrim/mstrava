@@ -1,0 +1,18 @@
+version: '3.5'
+
+services:
+  my-database:
+    container_name: mydatabase
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=mstrava
+    ports:
+      - "3306:3306"
+
+  my-tomcat:
+    container_name: mytomcat
+    image: izone/tomcat:latest
+    volumes:
+      - /Users/gumichel/Theodo/strava/mstrava/mstrava/out/artifacts/strava:/usr/local/tomcat/webapps
+    ports:
+      - "8080:8080"

@@ -1,6 +1,5 @@
 package com.mstrava.tools.db;
 
-import org.junit.jupiter.api.Test;
 
 import java.sql.*;
 import java.util.logging.Level;
@@ -40,12 +39,6 @@ public class DatabaseHelper {
         throw new SQLException("No valid answer from database");
     }
 
-    @Test
-    void test1() throws SQLException {
-        Timestamp start = Timestamp.valueOf("2019-12-31 15:00:00");
-        Timestamp end = new Timestamp(System.currentTimeMillis());
-        DatabaseHelper.sendRunUpdate("ivan", 8431, 530, start, end);
-    }
 }
 
 

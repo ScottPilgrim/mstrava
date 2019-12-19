@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="strava">
+    <output-path>$PROJECT_DIR$/out/artifacts/strava</output-path>
+    <root id="archive" name="strava.war" />
+  </artifact>
+</component>
